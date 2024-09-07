@@ -2,7 +2,7 @@
 //  TinderApp.swift
 //  Tinder
 //
-//  Created by MeTaLlOiD on 07/09/24.
+//  Created by MeTaLlOiD on 30/08/24.
 //
 
 import SwiftUI
