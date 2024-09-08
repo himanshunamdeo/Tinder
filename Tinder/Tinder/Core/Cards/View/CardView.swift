@@ -27,6 +27,8 @@ struct CardView: View {
                     .overlay {
                         ImageScrollingOverlay(currentImageIndex: $currentImageIndex, imageCount: mockImages.count)
                     }
+                CardImageIndicatorView(currentImageIndex: currentImageIndex,
+                                       imageCount: mockImages.count)
                 
                 SwipeActionIndicator(xOffset: $xOffset)
                     .padding()
@@ -36,6 +38,7 @@ struct CardView: View {
                 .foregroundStyle(.white)
                 .padding(.horizontal)
         }
+        .background(.black)
         .frame(width: SizeConstants.cardWidth, height: SizeConstants.cardHeight)
         .clipShape(RoundedRectangle(cornerRadius: 10))
         .offset(x: xOffset)

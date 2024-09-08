@@ -13,9 +13,13 @@ struct CardImageIndicatorView: View {
     let imageCount: Int
     
     var body: some View {
-        ForEach(0 ..< imageCount, id: \.self) { index in
-            Capsule()
-                .frame(width: 100, height: 4)
+        HStack {
+            ForEach(0 ..< imageCount, id: \.self) { index in
+                Capsule()
+                    .foregroundStyle(currentImageIndex == index ? .white : .gray)
+                    .frame(width: 100, height: 4)
+                    .padding(.top, 8)
+            }
         }
     }
 }
