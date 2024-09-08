@@ -17,15 +17,20 @@ struct CardImageIndicatorView: View {
             ForEach(0 ..< imageCount, id: \.self) { index in
                 Capsule()
                     .foregroundStyle(currentImageIndex == index ? .white : .gray)
-                    .frame(width: 100, height: 4)
+                    .frame(width: imageIndicatorWidth, height: 4)
                     .padding(.top, 8)
             }
         }
     }
 }
 
+private extension CardImageIndicatorView {
+    var imageIndicatorWidth: CGFloat {
+        return (SizeConstants.cardWidth / CGFloat(imageCount)) - 28
+    }
+}
 struct CardImageIndicatorView_Previews: PreviewProvider {
     static var previews: some View {
-        CardImageIndicatorView(currentImageIndex: 1, imageCount: 3)
+        CardImageIndicatorView(currentImageIndex: 1, imageCount: 4)
     }
 }

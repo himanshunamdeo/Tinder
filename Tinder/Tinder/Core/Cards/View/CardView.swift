@@ -11,11 +11,11 @@ struct CardView: View {
     
     @State private var xOffset: CGFloat = 0
     @State private var degrees: Double = 0
-    @State private var currentImageIndex = 2
+    @State private var currentImageIndex = 0
     @State private var mockImages = [
-                                        "cactus",
-                                        "pencils",
-                                        "sketchpens"
+                                        "GirlOnBeach",
+                                        "blueButterflyGirl",
+                                        "indianGirl"
                                     ]
     
     var body: some View {
@@ -36,7 +36,7 @@ struct CardView: View {
             
             UserInfoView()
                 .foregroundStyle(.white)
-                .padding(.horizontal)
+                .padding(.horizontal, 30)
         }
         .background(.black)
         .frame(width: SizeConstants.cardWidth, height: SizeConstants.cardHeight)
