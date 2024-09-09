@@ -7,6 +7,7 @@
 
 import Foundation
 
+@MainActor
 class CardViewModel: ObservableObject {
     @Published var cardModels = [CardModel]()
     
@@ -23,5 +24,9 @@ class CardViewModel: ObservableObject {
         } catch let error {
             print("Failed to fetch cards with error \(error.localizedDescription)")
         }
+    }
+    
+    func removeCard( cardModel: CardModel) {
+        cardModels.removeAll { $0.id == cardModel.id }
     }
 }
