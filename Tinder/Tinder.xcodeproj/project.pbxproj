@@ -26,6 +26,8 @@
 		A67CA6A72C8D944200A42B35 /* CardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67CA6A62C8D944200A42B35 /* CardsViewModel.swift */; };
 		A67CA6AA2C8D94C100A42B35 /* CardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67CA6A92C8D94C100A42B35 /* CardService.swift */; };
 		A67CA6AD2C8D973800A42B35 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67CA6AC2C8D973800A42B35 /* MockData.swift */; };
+		A67CA6AF2C8F148A00A42B35 /* SwipeActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67CA6AE2C8F148A00A42B35 /* SwipeActionButtonView.swift */; };
+		A67CA6B12C8F167A00A42B35 /* SwipeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67CA6B02C8F167A00A42B35 /* SwipeAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		A67CA6A62C8D944200A42B35 /* CardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewModel.swift; sourceTree = "<group>"; };
 		A67CA6A92C8D94C100A42B35 /* CardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardService.swift; sourceTree = "<group>"; };
 		A67CA6AC2C8D973800A42B35 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		A67CA6AE2C8F148A00A42B35 /* SwipeActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionButtonView.swift; sourceTree = "<group>"; };
+		A67CA6B02C8F167A00A42B35 /* SwipeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeAction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +200,7 @@
 				A61B5CAD2C892D2100D174EC /* ImageScrollingOverlay.swift */,
 				A61B5CAF2C89343300D174EC /* CardImageIndicatorView.swift */,
 				A67CA69C2C8D90CD00A42B35 /* CardStackView.swift */,
+				A67CA6AE2C8F148A00A42B35 /* SwipeActionButtonView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -228,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				A67CA6A32C8D93D000A42B35 /* CardModel.swift */,
+				A67CA6B02C8F167A00A42B35 /* SwipeAction.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -329,6 +335,7 @@
 				A67CA6A12C8D933500A42B35 /* User.swift in Sources */,
 				A61B5CB02C89343300D174EC /* CardImageIndicatorView.swift in Sources */,
 				A67CA6A72C8D944200A42B35 /* CardsViewModel.swift in Sources */,
+				A67CA6B12C8F167A00A42B35 /* SwipeAction.swift in Sources */,
 				A67CA6AD2C8D973800A42B35 /* MockData.swift in Sources */,
 				A61B5CAE2C892D2100D174EC /* ImageScrollingOverlay.swift in Sources */,
 				A67CA6A42C8D93D000A42B35 /* CardModel.swift in Sources */,
@@ -343,6 +350,7 @@
 				A67CA69D2C8D90CD00A42B35 /* CardStackView.swift in Sources */,
 				A61B5CA22C868B0F00D174EC /* MainTabView.swift in Sources */,
 				A61B5CAC2C892B8500D174EC /* SizeConstants.swift in Sources */,
+				A67CA6AF2C8F148A00A42B35 /* SwipeActionButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

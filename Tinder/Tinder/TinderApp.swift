@@ -13,7 +13,7 @@ struct TinderApp: App {
 
     var body: some Scene {
         WindowGroup {
-            CardStackView()
+            MainTabView()
         }
     }
 }
